@@ -136,3 +136,23 @@ from math import floor
 #     li.append(dice1+dice2)
 # for i in range(2,13):
 #     print(f"number {i}: {round((li.count(i)/1000)*100)}%")
+
+#10. Write a program that accepts a list from user. Your program should reverse the content of list and display it. Do not use reverse() method.
+# li = [9,8,7,6,5,4,3,2,1]
+# for i in range(0,len(li)):
+#     li.insert(i,li[len(li)-1-i])
+#
+# for i in range(len(li),floor(len(li)/2),-1):
+#     li.pop()
+#
+# print(li)
+
+#11. Write a program with a function that accepts a string from keyboard and create a new string after converting character of each word capitalized. For instance, if the sentence is "stop and smell the roses." the output should be "Stop And Smell The Roses"
+
+sentence = input("Enter a sentence: ")
+li = []
+li.extend(sentence.split(" "))
+
+for word in li:
+    word = word.capitalize()
+    print(word, end=" ")
